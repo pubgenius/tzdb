@@ -198,7 +198,7 @@ async function run() {
     for (let [, timeZoneWithCities] of Object.entries(countryTimeZones)) {
       const orderedCities = orderBy(timeZoneWithCities, "population", "desc");
 
-      const mainCitiesObject = orderedCities.slice(0, 4);
+      const mainCitiesObject = orderedCities.slice(0, 20);
       const mainCities = mainCitiesObject.map(({ name }) => {
         return name;
       });
